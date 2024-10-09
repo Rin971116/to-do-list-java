@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif; /*設定網頁文字的字體為 Arial，如果 Arial 不可用，則使用 sans-serif 類別的字體。*/
+    background-color: #f4f4f4; /*設置整個網頁背景顏色為 #f4f4f4（淺灰色）。*/
+    display: flex; /*將 body 設定為 Flexbox 容器，這樣內部的元素會依照 Flexbox 排列規則來排列。*/
+    justify-content: center; /*將內容在 水平方向 上置中排列。*/
+    align-items: center; /*將內容在 垂直方向 上置中排列。*/
+    height: 100vh; /*設定 body 的高度為 100vh，即視窗的 100% 高度。*/
+    margin: 0; /*設定元素外邊距，假如有兩個元素時，要距離另一個元素多遠*/
+}
+
+.container {
+    background: #fff;
+    padding: 20px; /*設置內邊距*/
+    border-radius: 5px; /* 設置圓角 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 50%; /*自動設定為螢幕寬度的50%*/
+    margin: 10px;
+}
+
+h1 {
+    margin: 0 0 20px;
+    text-align: center;
+}
+
+input{
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+/*能夠透過id去設定 特定input tag*/
+/*#new-task {*/
+/*    border: 2px solid red;*/
+/*    padding: 5px;*/
+/*}*/
+
+
+button[type="reset"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #d9534f;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+button[type="add"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #5cb85c;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button[type="reset"]:hover {
+    background-color: #c9302c;
+}
+
+button[type="add"]:hover {
+    background-color: #4cae4c;
+}
+
+/*ul {*/
+/*    list-style: none;*/
+/*    padding: 0;*/
+/*}*/
+
+/*li {*/
+/*    background: #f9f9f9;*/
+/*    padding: 10px;*/
+/*    border-bottom: 1px solid #ddd;*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*}*/
+
+/*li:last-child {*/
+/*    border-bottom: none;*/
+/*}*/
+
+/*li button {*/
+/*    background-color: #d9534f;*/
+/*    color: white;*/
+/*    border: none;*/
+/*    padding: 5px 10px;*/
+/*    cursor: pointer;*/
+/*    border-radius: 3px;*/
+/*}*/
+
+/*li button:hover {*/
+/*    background-color: #c9302c;*/
+/*}*/
+
+tbody button {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.table-container{
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+th{
+    text-align: left; /* 可根據需求設置為置左、置中等 */
+    width: 33%;
+}
+
+tbody tr:nth-child(odd){
+    background-color: #cccccc;
+}

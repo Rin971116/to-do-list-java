@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>任務清單</h1>
+<!--    使用id幫這個input tag取個唯一變量名 可以便於在css,js中調用-->
+<!--    placeholder是提示字，value是預設存在的字-->
+    <input type="text" id="new-task" placeholder="添加新的任務..." maxlength="10">
+    <input type="datetime-local" id="deadline">
+
+    <!--    一些常用的input-->
+    <!--    <input type="number" min="0" max="100" step="20">-->
+    <!--    <input type="color">-->
+    <!--    <input type="datetime-local"> 日期和時間輸入框，允許用戶選擇本地時間-->
+    <!--    <input type="file">-->
+
+    <button type="add" onclick="addTask()"> Add Task</button>
+    <button type="reset" onclick="resetAll()"> Reset all</button>
+
+    <div class="table-container">
+        <table id="task-table">
+            <thead>
+            <tr>
+                <th>Task id</th>
+                <th>Task Name</th>
+                <th>Deadline</th>
+            </tr>
+            </thead>
+            <tbody id="task-body">
+            </tbody>
+        </table>
+    </div>
+
+    <ol id="task-list"></ol>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
