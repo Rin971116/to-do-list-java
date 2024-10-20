@@ -1,2 +1,2 @@
 # to-do-list-java
-A simple application that can CRUD tasks in database(MySQL).
+A Spring Boot application that can CRUD tasks in database(MySQL).
